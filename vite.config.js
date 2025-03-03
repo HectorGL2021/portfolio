@@ -29,4 +29,7 @@ export default defineConfig({
             ],
         },
     },
+    optimizeDeps: {
+        include: ['resources/css/app.css']
+    }
 });

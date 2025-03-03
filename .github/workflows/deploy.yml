@@ -30,7 +30,7 @@ jobs:
       run: |
         composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
         npm install
-        npm install -D tailwindcss postcss autoprefixer
+        npm install -D postcss@8.4.31 postcss-import@15.1.0 tailwindcss@3.3.5 autoprefixer@10.4.16
         
     - name: Generate key
       run: php artisan key:generate

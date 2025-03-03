@@ -1,7 +1,5 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
     plugins: [
@@ -13,23 +11,8 @@ export default defineConfig({
     build: {
         manifest: true,
         outDir: 'public/build',
-        emptyOutDir: true,
         rollupOptions: {
-            input: {
-                'app': 'resources/js/app.js',
-                'style': 'resources/css/app.css'
-            }
+            input: 'resources/js/app.js'
         }
-    },
-    css: {
-        postcss: {
-            plugins: [
-                tailwindcss,
-                autoprefixer,
-            ],
-        },
-    },
-    optimizeDeps: {
-        include: ['resources/css/app.css']
     }
 });

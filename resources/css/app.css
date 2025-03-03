@@ -4,8 +4,8 @@
 
 @layer base {
     body {
-        background-color: #ffffff;
-        color: #1a1a1a;
+        background-color: #1e1e1e;
+        color: #d4d4d4;
         font-family: 'Fira Code', monospace;
     }
 }
@@ -13,17 +13,17 @@
 @layer components {
     /* Navbar */
     .navbar {
-        background-color: #ffffff;
-        border-bottom: 1px solid #e0e0e0;
+        background-color: #1e1e1e;
+        border-bottom: 1px solid #333333;
     }
 
     .navbar-brand {
-        color: #1a1a1a !important;
+        color: #d4d4d4 !important;
         font-weight: 600;
     }
 
     .nav-link {
-        color: #1a1a1a !important;
+        color: #d4d4d4 !important;
         opacity: 0.8;
         transition: opacity 0.3s ease;
     }
@@ -31,11 +31,12 @@
     .nav-link:hover,
     .nav-link.active {
         opacity: 1;
+        color: #ffffff !important;
     }
 
     /* Hero Section */
     .hero-section {
-        background-color: #ffffff;
+        background-color: #1e1e1e;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -47,32 +48,35 @@
     }
 
     .hero-content h1 {
-        color: #1a1a1a;
+        color: #ffffff;
+        font-weight: 600;
     }
 
     .hero-content h2 {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.9;
     }
 
     .hero-content p {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
     }
 
     /* Code Window */
     .code-window {
-        background-color: #f5f5f5;
+        background-color: #1e1e1e;
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        border: 1px solid #333333;
     }
 
     .code-header {
-        background-color: #e0e0e0;
+        background-color: #2d2d2d;
         padding: 0.5rem 1rem;
         display: flex;
         align-items: center;
+        border-bottom: 1px solid #333333;
     }
 
     .code-buttons {
@@ -102,117 +106,126 @@
     }
 
     .code-content code {
-        color: #1a1a1a;
+        color: #d4d4d4;
     }
 
     /* Cards */
     .card {
-        background-color: #ffffff;
+        background-color: #2d2d2d;
         transition: transform 0.3s ease;
-        border: 1px solid #e0e0e0;
+        border: 1px solid #333333;
     }
 
     .card:hover {
         transform: translateY(-5px);
+        border-color: #4d4d4d;
     }
 
     .card-body {
         padding: 2rem;
-        color: #1a1a1a;
+        color: #d4d4d4;
     }
 
     .card h3 {
-        color: #1a1a1a;
+        color: #ffffff;
+        font-weight: 600;
     }
 
     .card p {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
     }
 
     /* Footer */
     footer {
-        background-color: #ffffff;
-        border-top: 1px solid #e0e0e0;
+        background-color: #1e1e1e;
+        border-top: 1px solid #333333;
     }
 
     footer h5 {
-        color: #1a1a1a;
+        color: #ffffff;
+        font-weight: 600;
     }
 
     footer p {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
     }
 
     .social-links a {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
         transition: opacity 0.3s ease;
     }
 
     .social-links a:hover {
         opacity: 1;
+        color: #ffffff;
     }
 
     /* Botones */
     .btn-light {
-        background-color: #1a1a1a;
+        background-color: #0d6efd;
         color: #ffffff;
         border: none;
     }
 
     .btn-outline-light {
-        border-color: #1a1a1a;
-        color: #1a1a1a;
+        border-color: #0d6efd;
+        color: #0d6efd;
     }
 
     .btn-outline-light:hover {
-        background-color: #1a1a1a;
+        background-color: #0d6efd;
         color: #ffffff;
     }
 
     /* Textos generales */
     h1, h2, h3, h4, h5, h6 {
-        color: #1a1a1a;
+        color: #ffffff;
+        font-weight: 600;
     }
 
     p {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
     }
 
     .text-white-50 {
-        color: rgba(26, 26, 26, 0.8) !important;
+        color: rgba(212, 212, 212, 0.8) !important;
     }
 
     /* Estilos para la sección de experiencia */
+    .experience-section {
+        color: #d4d4d4;
+    }
+
     .experience-section h1 {
-        color: #1a1a1a;
+        color: #ffffff;
         margin-bottom: 2rem;
     }
 
     .experience-section .card {
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
+        background-color: #2d2d2d;
+        border: 1px solid #333333;
     }
 
     .experience-section .card-body {
-        color: #1a1a1a;
+        color: #d4d4d4;
     }
 
     .experience-section .card h2 {
-        color: #1a1a1a;
+        color: #ffffff;
         font-weight: 600;
     }
 
     .experience-section .card h3 {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
     }
 
     .experience-section .card ul li {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.9;
     }
 
@@ -223,7 +236,7 @@
     }
 
     .experience-section .text-muted {
-        color: #1a1a1a !important;
+        color: #d4d4d4 !important;
         opacity: 0.7;
     }
 
@@ -233,55 +246,55 @@
 
     /* Estilos para todas las secciones */
     .container {
-        color: #1a1a1a;
+        color: #d4d4d4;
     }
 
     .container h1 {
-        color: #1a1a1a;
+        color: #ffffff;
         margin-bottom: 2rem;
     }
 
     .container .card {
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
+        background-color: #2d2d2d;
+        border: 1px solid #333333;
     }
 
     .container .card-body {
-        color: #1a1a1a;
+        color: #d4d4d4;
     }
 
     .container .card h2 {
-        color: #1a1a1a;
+        color: #ffffff;
         font-weight: 600;
     }
 
     .container .card h3 {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
     }
 
     .container .card p {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.8;
     }
 
     .container .card ul li {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.9;
     }
 
     .container .text-muted {
-        color: #1a1a1a !important;
+        color: #d4d4d4 !important;
         opacity: 0.7;
     }
 
     .container strong {
-        color: #1a1a1a;
+        color: #ffffff;
         opacity: 0.9;
     }
 
     .container .skill-item h3 {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.9;
     }
 
@@ -323,25 +336,98 @@
 
     /* Formularios */
     .form-control {
-        background-color: #ffffff;
-        border-color: #e0e0e0;
-        color: #1a1a1a;
+        background-color: #2d2d2d;
+        border-color: #333333;
+        color: #d4d4d4;
     }
 
     .form-control:focus {
-        background-color: #ffffff;
+        background-color: #2d2d2d;
         border-color: #0d6efd;
-        color: #1a1a1a;
+        color: #d4d4d4;
     }
 
     .form-label {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.9;
     }
 
     .form-text {
-        color: #1a1a1a;
+        color: #d4d4d4;
         opacity: 0.7;
+    }
+
+    /* Estilos adicionales para asegurar visibilidad */
+    .text-dark {
+        color: #d4d4d4 !important;
+    }
+
+    .text-muted {
+        color: #d4d4d4 !important;
+        opacity: 0.7;
+    }
+
+    .text-secondary {
+        color: #d4d4d4 !important;
+        opacity: 0.8;
+    }
+
+    .text-body {
+        color: #d4d4d4 !important;
+    }
+
+    .text-body-secondary {
+        color: #d4d4d4 !important;
+        opacity: 0.7;
+    }
+
+    /* Ajustes para elementos específicos */
+    .list-group-item {
+        background-color: #2d2d2d;
+        border-color: #333333;
+        color: #d4d4d4;
+    }
+
+    .list-group-item:hover {
+        background-color: #3d3d3d;
+    }
+
+    .table {
+        color: #d4d4d4;
+    }
+
+    .table td, .table th {
+        color: #d4d4d4;
+        border-color: #333333;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #3d3d3d;
+    }
+
+    /* Ajustes para modales */
+    .modal-content {
+        background-color: #2d2d2d;
+        border-color: #333333;
+    }
+
+    .modal-header {
+        border-bottom-color: #333333;
+    }
+
+    .modal-footer {
+        border-top-color: #333333;
+    }
+
+    /* Ajustes para tooltips */
+    .tooltip {
+        color: #d4d4d4;
+    }
+
+    .tooltip-inner {
+        background-color: #2d2d2d;
+        color: #d4d4d4;
+        border: 1px solid #333333;
     }
 }
 
@@ -352,24 +438,24 @@
 
 /* Estilos generales */
 body {
-    background-color: #ffffff;
-    color: #1a1a1a;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
     font-family: 'Fira Code', monospace;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333333;
 }
 
 .navbar-brand {
-    color: #1a1a1a !important;
+    color: #d4d4d4 !important;
     font-weight: 600;
 }
 
 .nav-link {
-    color: #1a1a1a !important;
+    color: #d4d4d4 !important;
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
@@ -377,11 +463,12 @@ body {
 .nav-link:hover,
 .nav-link.active {
     opacity: 1;
+    color: #ffffff !important;
 }
 
 /* Hero Section */
 .hero-section {
-    background-color: #ffffff;
+    background-color: #1e1e1e;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -393,32 +480,35 @@ body {
 }
 
 .hero-content h1 {
-    color: #1a1a1a;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .hero-content h2 {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.9;
 }
 
 .hero-content p {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
 }
 
 /* Code Window */
 .code-window {
-    background-color: #f5f5f5;
+    background-color: #1e1e1e;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333333;
 }
 
 .code-header {
-    background-color: #e0e0e0;
+    background-color: #2d2d2d;
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #333333;
 }
 
 .code-buttons {
@@ -448,117 +538,122 @@ body {
 }
 
 .code-content code {
-    color: #1a1a1a;
+    color: #d4d4d4;
 }
 
 /* Cards */
 .card {
-    background-color: #ffffff;
+    background-color: #2d2d2d;
     transition: transform 0.3s ease;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #333333;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    border-color: #4d4d4d;
 }
 
 .card-body {
     padding: 2rem;
-    color: #1a1a1a;
+    color: #d4d4d4;
 }
 
 .card h3 {
-    color: #1a1a1a;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .card p {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
 }
 
 /* Footer */
 footer {
-    background-color: #ffffff;
-    border-top: 1px solid #e0e0e0;
+    background-color: #1e1e1e;
+    border-top: 1px solid #333333;
 }
 
 footer h5 {
-    color: #1a1a1a;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 footer p {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
 }
 
 .social-links a {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
 .social-links a:hover {
     opacity: 1;
+    color: #ffffff;
 }
 
 /* Botones */
 .btn-light {
-    background-color: #1a1a1a;
+    background-color: #0d6efd;
     color: #ffffff;
     border: none;
 }
 
 .btn-outline-light {
-    border-color: #1a1a1a;
-    color: #1a1a1a;
+    border-color: #0d6efd;
+    color: #0d6efd;
 }
 
 .btn-outline-light:hover {
-    background-color: #1a1a1a;
+    background-color: #0d6efd;
     color: #ffffff;
 }
 
 /* Textos generales */
 h1, h2, h3, h4, h5, h6 {
-    color: #1a1a1a;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 p {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
 }
 
 .text-white-50 {
-    color: rgba(26, 26, 26, 0.8) !important;
+    color: rgba(212, 212, 212, 0.8) !important;
 }
 
 /* Estilos para la sección de experiencia */
 .experience-section h1 {
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
 .experience-section .card {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    background-color: #2d2d2d;
+    border: 1px solid #333333;
 }
 
 .experience-section .card-body {
-    color: #1a1a1a;
+    color: #d4d4d4;
 }
 
 .experience-section .card h2 {
-    color: #1a1a1a;
+    color: #ffffff;
     font-weight: 600;
 }
 
 .experience-section .card h3 {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
 }
 
 .experience-section .card ul li {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.9;
 }
 
@@ -569,7 +664,7 @@ p {
 }
 
 .experience-section .text-muted {
-    color: #1a1a1a !important;
+    color: #d4d4d4 !important;
     opacity: 0.7;
 }
 
@@ -579,55 +674,55 @@ p {
 
 /* Estilos para todas las secciones */
 .container {
-    color: #1a1a1a;
+    color: #d4d4d4;
 }
 
 .container h1 {
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
 .container .card {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    background-color: #2d2d2d;
+    border: 1px solid #333333;
 }
 
 .container .card-body {
-    color: #1a1a1a;
+    color: #d4d4d4;
 }
 
 .container .card h2 {
-    color: #1a1a1a;
+    color: #ffffff;
     font-weight: 600;
 }
 
 .container .card h3 {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
 }
 
 .container .card p {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.8;
 }
 
 .container .card ul li {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.9;
 }
 
 .container .text-muted {
-    color: #1a1a1a !important;
+    color: #d4d4d4 !important;
     opacity: 0.7;
 }
 
 .container strong {
-    color: #1a1a1a;
+    color: #ffffff;
     opacity: 0.9;
 }
 
 .container .skill-item h3 {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.9;
 }
 
@@ -669,23 +764,23 @@ p {
 
 /* Formularios */
 .form-control {
-    background-color: #ffffff;
-    border-color: #e0e0e0;
-    color: #1a1a1a;
+    background-color: #2d2d2d;
+    border-color: #333333;
+    color: #d4d4d4;
 }
 
 .form-control:focus {
-    background-color: #ffffff;
+    background-color: #2d2d2d;
     border-color: #0d6efd;
-    color: #1a1a1a;
+    color: #d4d4d4;
 }
 
 .form-label {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.9;
 }
 
 .form-text {
-    color: #1a1a1a;
+    color: #d4d4d4;
     opacity: 0.7;
 }

@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        background-color: #1e1e1e;
+        background-color: #1a1a1a;
         color: #d4d4d4;
         font-family: 'Fira Code', monospace;
     }
@@ -13,30 +13,51 @@
 @layer components {
     /* Navbar */
     .navbar {
-        background-color: #1e1e1e;
+        background-color: #242424;
         border-bottom: 1px solid #333333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .navbar-brand {
-        color: #d4d4d4 !important;
+        color: #ffffff !important;
         font-weight: 600;
+        font-size: 1.5rem;
     }
 
     .nav-link {
-        color: #d4d4d4 !important;
-        opacity: 0.8;
-        transition: opacity 0.3s ease;
+        color: #ffffff !important;
+        opacity: 0.9;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
     }
 
     .nav-link:hover,
     .nav-link.active {
         opacity: 1;
         color: #ffffff !important;
+        background-color: #2d2d2d;
+        border-radius: 4px;
+    }
+
+    .navbar-toggler {
+        border-color: #ffffff;
+        background-color: #2d2d2d;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+        border-color: #ffffff;
+        background-color: #333333;
     }
 
     /* Hero Section */
     .hero-section {
-        background-color: #1e1e1e;
+        background-color: #1a1a1a;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -64,7 +85,7 @@
 
     /* Code Window */
     .code-window {
-        background-color: #1e1e1e;
+        background-color: #242424;
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -111,14 +132,16 @@
 
     /* Cards */
     .card {
-        background-color: #2d2d2d;
-        transition: transform 0.3s ease;
+        background-color: #242424;
+        transition: all 0.3s ease;
         border: 1px solid #333333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .card:hover {
         transform: translateY(-5px);
-        border-color: #4d4d4d;
+        border-color: #404040;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     .card-body {
@@ -138,7 +161,7 @@
 
     /* Footer */
     footer {
-        background-color: #1e1e1e;
+        background-color: #242424;
         border-top: 1px solid #333333;
     }
 
@@ -337,12 +360,12 @@
     /* Formularios */
     .form-control {
         background-color: #2d2d2d;
-        border-color: #333333;
+        border-color: #404040;
         color: #d4d4d4;
     }
 
     .form-control:focus {
-        background-color: #2d2d2d;
+        background-color: #333333;
         border-color: #0d6efd;
         color: #d4d4d4;
     }
@@ -357,39 +380,15 @@
         opacity: 0.7;
     }
 
-    /* Estilos adicionales para asegurar visibilidad */
-    .text-dark {
-        color: #d4d4d4 !important;
-    }
-
-    .text-muted {
-        color: #d4d4d4 !important;
-        opacity: 0.7;
-    }
-
-    .text-secondary {
-        color: #d4d4d4 !important;
-        opacity: 0.8;
-    }
-
-    .text-body {
-        color: #d4d4d4 !important;
-    }
-
-    .text-body-secondary {
-        color: #d4d4d4 !important;
-        opacity: 0.7;
-    }
-
-    /* Ajustes para elementos específicos */
+    /* Listas y tablas */
     .list-group-item {
-        background-color: #2d2d2d;
+        background-color: #242424;
         border-color: #333333;
         color: #d4d4d4;
     }
 
     .list-group-item:hover {
-        background-color: #3d3d3d;
+        background-color: #2d2d2d;
     }
 
     .table {
@@ -402,24 +401,26 @@
     }
 
     .table-hover tbody tr:hover {
-        background-color: #3d3d3d;
+        background-color: #2d2d2d;
     }
 
-    /* Ajustes para modales */
+    /* Modales */
     .modal-content {
-        background-color: #2d2d2d;
+        background-color: #242424;
         border-color: #333333;
     }
 
     .modal-header {
         border-bottom-color: #333333;
+        background-color: #2d2d2d;
     }
 
     .modal-footer {
         border-top-color: #333333;
+        background-color: #2d2d2d;
     }
 
-    /* Ajustes para tooltips */
+    /* Tooltips */
     .tooltip {
         color: #d4d4d4;
     }
@@ -434,353 +435,4 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-/* Estilos generales */
-body {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    font-family: 'Fira Code', monospace;
-}
-
-/* Navbar */
-.navbar {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #333333;
-}
-
-.navbar-brand {
-    color: #d4d4d4 !important;
-    font-weight: 600;
-}
-
-.nav-link {
-    color: #d4d4d4 !important;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    opacity: 1;
-    color: #ffffff !important;
-}
-
-/* Hero Section */
-.hero-section {
-    background-color: #1e1e1e;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
-}
-
-.hero-content {
-    padding: 2rem 0;
-}
-
-.hero-content h1 {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.hero-content h2 {
-    color: #d4d4d4;
-    opacity: 0.9;
-}
-
-.hero-content p {
-    color: #d4d4d4;
-    opacity: 0.8;
-}
-
-/* Code Window */
-.code-window {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border: 1px solid #333333;
-}
-
-.code-header {
-    background-color: #2d2d2d;
-    padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #333333;
-}
-
-.code-buttons {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.code-button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.code-button.red { background-color: #ff5f56; }
-.code-button.yellow { background-color: #ffbd2e; }
-.code-button.green { background-color: #27c93f; }
-
-.code-content {
-    padding: 1.5rem;
-}
-
-.code-content pre {
-    margin: 0;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-.code-content code {
-    color: #d4d4d4;
-}
-
-/* Cards */
-.card {
-    background-color: #2d2d2d;
-    transition: transform 0.3s ease;
-    border: 1px solid #333333;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #4d4d4d;
-}
-
-.card-body {
-    padding: 2rem;
-    color: #d4d4d4;
-}
-
-.card h3 {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.card p {
-    color: #d4d4d4;
-    opacity: 0.8;
-}
-
-/* Footer */
-footer {
-    background-color: #1e1e1e;
-    border-top: 1px solid #333333;
-}
-
-footer h5 {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-footer p {
-    color: #d4d4d4;
-    opacity: 0.8;
-}
-
-.social-links a {
-    color: #d4d4d4;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.social-links a:hover {
-    opacity: 1;
-    color: #ffffff;
-}
-
-/* Botones */
-.btn-light {
-    background-color: #0d6efd;
-    color: #ffffff;
-    border: none;
-}
-
-.btn-outline-light {
-    border-color: #0d6efd;
-    color: #0d6efd;
-}
-
-.btn-outline-light:hover {
-    background-color: #0d6efd;
-    color: #ffffff;
-}
-
-/* Textos generales */
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-p {
-    color: #d4d4d4;
-    opacity: 0.8;
-}
-
-.text-white-50 {
-    color: rgba(212, 212, 212, 0.8) !important;
-}
-
-/* Estilos para la sección de experiencia */
-.experience-section h1 {
-    color: #ffffff;
-    margin-bottom: 2rem;
-}
-
-.experience-section .card {
-    background-color: #2d2d2d;
-    border: 1px solid #333333;
-}
-
-.experience-section .card-body {
-    color: #d4d4d4;
-}
-
-.experience-section .card h2 {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.experience-section .card h3 {
-    color: #d4d4d4;
-    opacity: 0.8;
-}
-
-.experience-section .card ul li {
-    color: #d4d4d4;
-    opacity: 0.9;
-}
-
-.experience-section .badge {
-    background-color: #0d6efd !important;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.experience-section .text-muted {
-    color: #d4d4d4 !important;
-    opacity: 0.7;
-}
-
-.experience-section .fa-check {
-    color: #0d6efd;
-}
-
-/* Estilos para todas las secciones */
-.container {
-    color: #d4d4d4;
-}
-
-.container h1 {
-    color: #ffffff;
-    margin-bottom: 2rem;
-}
-
-.container .card {
-    background-color: #2d2d2d;
-    border: 1px solid #333333;
-}
-
-.container .card-body {
-    color: #d4d4d4;
-}
-
-.container .card h2 {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.container .card h3 {
-    color: #d4d4d4;
-    opacity: 0.8;
-}
-
-.container .card p {
-    color: #d4d4d4;
-    opacity: 0.8;
-}
-
-.container .card ul li {
-    color: #d4d4d4;
-    opacity: 0.9;
-}
-
-.container .text-muted {
-    color: #d4d4d4 !important;
-    opacity: 0.7;
-}
-
-.container strong {
-    color: #ffffff;
-    opacity: 0.9;
-}
-
-.container .skill-item h3 {
-    color: #d4d4d4;
-    opacity: 0.9;
-}
-
-/* Timeline */
-.timeline {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #0d6efd;
-}
-
-.timeline-item {
-    position: relative;
-    padding-bottom: 2rem;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -2.4rem;
-    top: 0.5rem;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: #0d6efd;
-}
-
-.timeline-item:last-child {
-    padding-bottom: 0;
-}
-
-/* Formularios */
-.form-control {
-    background-color: #2d2d2d;
-    border-color: #333333;
-    color: #d4d4d4;
-}
-
-.form-control:focus {
-    background-color: #2d2d2d;
-    border-color: #0d6efd;
-    color: #d4d4d4;
-}
-
-.form-label {
-    color: #d4d4d4;
-    opacity: 0.9;
-}
-
-.form-text {
-    color: #d4d4d4;
-    opacity: 0.7;
 }

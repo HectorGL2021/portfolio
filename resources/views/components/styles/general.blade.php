@@ -25,36 +25,72 @@
     }
 
     body {
-        background-color: var(--primary-color);
-        color: var(--text-primary);
+        background-color: #1a1a1a;
+        color: #d4d4d4;
         font-family: 'Inter', sans-serif;
         line-height: 1.6;
+        padding-top: 76px; /* Altura de la navbar */
     }
 
     /* Estilos de texto unificados */
     h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fira Code', monospace;
         color: var(--text-primary);
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Títulos de sección */
+    .display-4 {
+        font-family: 'Fira Code', monospace;
+        font-size: 2.5rem;
         font-weight: 600;
-        line-height: 1.3;
-        margin-bottom: 1rem;
+        color: var(--accent-blue-light);
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+        position: relative;
+    }
+
+    .display-4::before {
+        content: '// ';
+        color: var(--accent-color);
+        opacity: 0.8;
+    }
+
+    .display-4::after {
+        content: '';
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background: var(--accent-color);
+        box-shadow: 0 0 8px var(--accent-color);
+        border-radius: 1px;
     }
 
     h1 {
-        font-size: 3.5rem;
-        letter-spacing: -0.02em;
+        font-size: 2.75rem;
+        font-weight: 600;
+        color: var(--accent-blue-light);
     }
 
     h2 {
-        font-size: 2.5rem;
-        letter-spacing: -0.01em;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--accent-color);
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #ffffff;
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--text-secondary);
     }
 
     p {
@@ -103,8 +139,9 @@
     }
 
     /* Secciones */
-    section {
-        padding: 5rem 0;
+    section, 
+    .container {
+        padding-top: 2rem;
     }
 
     /* Contenedores */
@@ -223,5 +260,10 @@
 
     .fade-in {
         animation: fadeIn 0.6s ease forwards;
+    }
+
+    /* Contenedor principal */
+    main {
+        min-height: calc(100vh - 76px);
     }
 </style> 

@@ -55,6 +55,9 @@ jobs:
         php artisan route:cache
         php artisan view:cache
         
+    - name: Create .nojekyll file
+      run: touch public/.nojekyll
+        
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:

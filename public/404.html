@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Redirigiendo...</title>
     <script>
-        window.location.href = '/portfolio/';
+        // Obtener la ruta base
+        const basePath = window.location.pathname.includes('/portfolio/') ? '/portfolio' : '';
+        window.location.href = basePath + '/';
     </script>
 </head>
 <body>

@@ -10,8 +10,8 @@
                         <h2 class="h3 mb-4 text-white-50">Desarrollador Full Stack</h2>
                         <p class="lead mb-4 text-white-50">Apasionado por la informática y el desarrollo tecnológico, especializado en soluciones web y aplicaciones industriales.</p>
                         <div class="d-flex gap-3">
-                            <a href="/contacto" class="btn btn-light btn-lg">Contactar</a>
-                            <a href="/sobre-mi" class="btn btn-outline-light btn-lg">Sobre Mí</a>
+                            <a href="{{ route('contact') }}" class="btn btn-light btn-lg">Contactar</a>
+                            <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">Sobre Mí</a>
                         </div>
                     </div>
                 </div>

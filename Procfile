@@ -1,2 +1,2 @@
-web: cp .env.production .env && vendor/bin/heroku-php-apache2 public/
-release: cp .env.production .env && php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan storage:link && php artisan optimize && php artisan key:generate --force 
+web: vendor/bin/heroku-php-apache2 public/
+release: php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan storage:link 

@@ -11,14 +11,15 @@ export default defineConfig({
         }),
     ],
     build: {
+        manifest: true,
         outDir: 'public/build',
         emptyOutDir: true,
-        manifest: true,
         rollupOptions: {
             input: {
-                app: 'resources/js/app.js',
-            },
-        },
+                'app': 'resources/js/app.js',
+                'style': 'resources/css/app.css'
+            }
+        }
     },
     css: {
         postcss: {

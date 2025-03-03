@@ -1,4 +1,9 @@
 {
+  "resources/css/app.css": {
+    "file": "assets/app-CmgfV4-p.css",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
   "resources/js/app.js": {
     "file": "assets/app-BPdsuzEQ.js",
     "name": "app",
